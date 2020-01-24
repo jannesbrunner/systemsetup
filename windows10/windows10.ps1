@@ -37,10 +37,16 @@ function askInstallation {
 
 # chocolatey gui
 if( (askInstallation -progName "Chocolatey Gui" -isVerbose $vb) -eq 1) {
-    Invoke-Expression ("choco install chocolateygui")
+    Invoke-Expression ("choco install chocolateygui -y")
 } else {
     Write-Host "Skipped.."
-}
+} 
+# Mozilla Firefox
+if( (askInstallation -progName "Mozilla Firefox" -isVerbose $vb) -eq 1) {
+    Invoke-Expression ("choco install firefox -y")
+} else {
+    Write-Host "Skipped.."
+} 
 
 # The End
 Write-Host -NoNewLine 'Press any key to exit...';
