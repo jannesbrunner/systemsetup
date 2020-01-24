@@ -1,6 +1,8 @@
 # Windows 10 automatic script setup
 This script will automatically install programs and tweak your system.
 
+![screenshot](screen.PNG "The script in action")
+
 
 ## Included programs
 - chocolatey
