@@ -1,5 +1,10 @@
+#Requires -RunAsAdministrator
 # IMPORTANT! You need to 'Set-ExecutionPolicy Bypass' in Order to run this script
 # IMPORTANT! You should run this script in administrator powershell enviroment
+param(
+[string]$paramVerbose
+)
+
 
 $verbose = Read-Host -Prompt "Would you like to run the verbose Mode?`nYou will be asked before any installation will executed.`nYes / No (default) "
 $vb = 0
