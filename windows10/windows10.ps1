@@ -40,18 +40,19 @@ function askInstallation {
 
 ## Installing using chocolatey
 
-# chocolatey gui
-if( (askInstallation -progName "Chocolatey Gui" -isVerbose $vb) -eq 1) {
-    Invoke-Expression ("choco install chocolateygui -y")
-} else {
-    Write-Host "Skipped.."
-} 
-# Mozilla Firefox
-if( (askInstallation -progName "Mozilla Firefox" -isVerbose $vb) -eq 1) {
-    Invoke-Expression ("choco install firefox -y")
-} else {
-    Write-Host "Skipped.."
-} 
+$progList = Get-content .\proglist.txt
+
+$a = 0
+$progList | Foreach-Object { 
+    if($vb -eq 0) {
+        $a++; "Start Installing: " + $_  
+    }
+    if( (askInstallation -progName $_ -isVerbose $vb) -eq 1) {
+        Invoke-Expression ("choco install $($_) -y")
+    } else {
+        Write-Host "Skipped.."
+    } 
+}
 
 # The End
 Write-Host -NoNewLine 'Press any key to exit...';
