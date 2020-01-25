@@ -1,5 +1,9 @@
 # Windows 10 automatic script setup
-This script will automatically install programs and tweak your system.
+_Windows10.ps1_ : This script will automatically install programs and tweak your system. Very handy if you're in front of a freshly naked installed machine <br>
+_checkUpdates.ps1_ : This script will check for available Windows updates and just lists them <br>
+_installUpdates.ps1_ : This script will install available Windows updates. You get prompted for "Yes, Yes All, No, No All" <br>
+
+
 
 ![screenshot](screen.PNG "The script in action")
 
