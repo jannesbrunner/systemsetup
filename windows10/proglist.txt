@@ -1,2 +1,3 @@
-chocolateygui
-firefox
+chocolateygui - A Gui program for chocolatey paket manager
+firefox - Firefox Web Browser
+ConEmu - OhMyPosh, Awesome Powershell addon with theme and git support

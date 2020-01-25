@@ -44,11 +44,13 @@ $progList = Get-content .\proglist.txt
 
 $a = 0
 $progList | Foreach-Object { 
+    $prog = $_.Split("-",[StringSplitOptions]'RemoveEmptyEntries')
+
     if($vb -eq 0) {
-        $a++; "Start Installing: " + $_  
+        $a++; "Start Installing: " + $prog[1]   
     }
-    if( (askInstallation -progName $_ -isVerbose $vb) -eq 1) {
-        Invoke-Expression ("choco install $($_) -y")
+    if( (askInstallation -progName $prog[1] -isVerbose $vb) -eq 1) {
+        Invoke-Expression ("choco install $($prog[0]) -y")
     } else {
         Write-Host "Skipped.."
     } 
