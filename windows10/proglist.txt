@@ -1,3 +1,29 @@
 chocolateygui - A Gui program for chocolatey paket manager
 firefox - Firefox Web Browser
+googlechrome - Goolge Chrome Web Browser
+vivaldi - Vivaldi Web Browser
+thunderbird - Thunderbird E-Mail Client
+telegram - Telegram messaging app
+teamviewer9 - Team Viewer
+teamspeak - TeamSpeak VOIP Client
+discord - Discord VOIP Client
+winrar - WinRaR archive manager
+jdownloader - jdownloader download manager
 ConEmu - OhMyPosh, Awesome Powershell addon with theme and git support
+autoruns - A tool to configure auto starts (programs) 
+procexp - Process Explorer, advanced task manager
+steam - Steam Game Client by Valce Co.
+uplay - Uplay Game Client by Ubisoft Co.
+origin - Origin Game Client by EA Co.
+epicgameslauncher - Epic Games Launcer Client
+vscode - Visual Studio Code
+notepadplusplus - Notepad++ free editor
+javaruntime - Java RE
+python - Python 3 language
+ruby - Ruby Language
+miktex - MiKTeX Windows Latex Manager
+texstudio - TeXstudio LaTex IDE
+putty - PuTTY Client
+dropbox - Dropbox cloud sync client
+googledrive - Google Drive cloud sync client
+megasync - Megasync Mega Cloud sync client
